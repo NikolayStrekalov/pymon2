@@ -12,7 +12,7 @@ VENV_DIR=$LIB_DIR/venv
 case "$1" in
     configure)
 
-        cd $VENV_DIR && virtualenv . && cd -
+        cd $VENV_DIR && virtualenv -p `which python2` . && cd -
 
     ;;
 
