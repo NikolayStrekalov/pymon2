@@ -85,7 +85,7 @@ class TelegramChannelReporter(BaseReporter):
         """
         Prepare all data needed for TelegramSenderBot.
         """
-        hostname = socket.getfqdn()
+        hostname = socket.gethostname()
         error_time = datetime.now()
 
         return {
